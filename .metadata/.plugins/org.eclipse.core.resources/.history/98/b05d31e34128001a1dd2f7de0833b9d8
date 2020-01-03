@@ -1,0 +1,5 @@
+package jdbc.board.exam;
+
+public interface BoardDAO {
+
+}

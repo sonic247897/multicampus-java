@@ -1,0 +1,11 @@
+package jdbc.member.exam;
+
+import java.util.ArrayList;
+
+public interface MemberDAO {
+	int insert(MemberDTO user);	//사원등록
+	int update(String id, String addr);	//사원정보수정
+	int delete(String id); //사원탈퇴
+	ArrayList<memberDTO> memberList(); //2. 전체 사원목록 조회
+	
+}

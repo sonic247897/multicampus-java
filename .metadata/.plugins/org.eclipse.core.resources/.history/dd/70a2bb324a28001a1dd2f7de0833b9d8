@@ -1,0 +1,12 @@
+package jdbc.board.exam;
+
+public class BoardDTO {
+	// private으로 선언 (보안)
+	// 컬럼명과 변수 이름을 맞춘다.
+	private int boardNum;
+	private String id;
+	private String title;
+	private String content;
+	private Date write_date;
+	
+}

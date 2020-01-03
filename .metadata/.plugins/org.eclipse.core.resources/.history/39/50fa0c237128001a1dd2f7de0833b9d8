@@ -1,0 +1,12 @@
+package api.util;
+
+import java.util.ArrayList;
+
+public class ArrayTest02 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		
+		
+	}
+
+}

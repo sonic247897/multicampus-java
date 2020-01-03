@@ -1,0 +1,8 @@
+package api.util;
+
+public class ArrayTest02 {
+	public static void main(String[] args) {
+
+	}
+
+}

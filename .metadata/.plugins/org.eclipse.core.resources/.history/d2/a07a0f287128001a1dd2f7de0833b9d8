@@ -1,0 +1,13 @@
+package api.util;
+
+import java.util.ArrayList;
+// collection에 저장할 요소의 타입을 generic형태로 정의한다.
+
+public class ArrayTest02 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		
+		
+	}
+
+}

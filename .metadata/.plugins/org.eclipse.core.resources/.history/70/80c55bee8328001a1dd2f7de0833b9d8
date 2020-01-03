@@ -1,0 +1,11 @@
+package test;
+
+public class go extends hi{
+	go(){
+		super();
+	}
+	super.OS = "hell";
+	super.
+	
+
+}

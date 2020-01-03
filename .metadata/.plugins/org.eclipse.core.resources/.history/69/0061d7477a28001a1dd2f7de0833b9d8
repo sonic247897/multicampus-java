@@ -1,0 +1,82 @@
+package work.one;
+
+import oracle.sql.DATE;
+
+public class CustomerDTO {
+	private String id;
+	private int pass;
+	private String name;
+	private DATE regdate;
+	private int point;
+	private String addr;
+	
+	public CustomerDTO() {
+		
+	}
+
+	// insert¿ë
+	public CustomerDTO(String id, int pass, String name, DATE regdate, int point, String addr) {
+		super();
+		this.id = id;
+		this.pass = pass;
+		this.name = name;
+		this.regdate = regdate;
+		this.point = point;
+		this.addr = addr;
+	}
+
+	@Override
+	public String toString() {
+		return "CustomerDTO [id=" + id + ", pass=" + pass + ", name=" + name + ", regdate=" + regdate + ", point="
+				+ point + ", addr=" + addr + "]";
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public int getPass() {
+		return pass;
+	}
+
+	public void setPass(int pass) {
+		this.pass = pass;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public DATE getRegdate() {
+		return regdate;
+	}
+
+	public void setRegdate(DATE regdate) {
+		this.regdate = regdate;
+	}
+
+	public int getPoint() {
+		return point;
+	}
+
+	public void setPoint(int point) {
+		this.point = point;
+	}
+
+	public String getAddr() {
+		return addr;
+	}
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+	
+}

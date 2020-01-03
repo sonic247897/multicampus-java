@@ -1,0 +1,12 @@
+package api.util;
+
+public class ArrayListTest03 {
+	public static void main(String[] args) {
+		String[] arr = {"java", "oracle", "jdbc", "html5", "css"};
+		
+		
+	}
+	//ArrayList도 리턴타입이 될 수 있다.
+	public static ArrayList<String> 
+
+}
