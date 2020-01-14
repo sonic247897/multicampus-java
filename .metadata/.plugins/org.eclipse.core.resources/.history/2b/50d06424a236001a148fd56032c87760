@@ -1,0 +1,12 @@
+package api.util;
+
+import java.util.HashSet;
+
+public class HashSetExam {
+	public static void main(String[] args) {
+		// set1 -> 1부터 10까지의 정수
+		// set2 -> 5부터 15까지의 정수
+		HashSet<E> set = new HashSet<>()
+	}
+
+}

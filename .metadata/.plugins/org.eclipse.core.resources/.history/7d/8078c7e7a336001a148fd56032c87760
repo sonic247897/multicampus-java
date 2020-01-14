@@ -1,0 +1,20 @@
+package api.util;
+
+import java.util.HashSet;
+
+public class HashSetExam {
+	public static void main(String[] args) {
+		// 다음과 같은 변수명으로 HashSet객체 2개 생성하기
+		// set1 -> 1부터 10까지의 정수
+		// set2 -> 5부터 15까지의 정수
+		HashSet<E> set1 = new HashSet<>()
+		HashSet<E> set1 = new HashSet<>()
+		
+			
+		// set1과 set2 합집합 출력하기
+
+
+		// set1과 set2 교집합 출력하기
+	}
+
+}

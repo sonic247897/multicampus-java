@@ -1,7 +1,0 @@
-package jdbc.board.exam;
-
-public interface BoardDAO {
-	public void insert(String id, String title, String content);
-	public void update(int boardNum, String id);
-	
-}

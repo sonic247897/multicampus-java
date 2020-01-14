@@ -1,0 +1,15 @@
+package api.util;
+
+import java.util.HashSet;
+
+public class HashSetTest2 {
+	public static void main(String[] args) {
+
+		
+	}
+	// Set에 저장된 데이터를 꺼내서 출력하기 
+	public static void print(HashSet<String> set) {
+		
+	}
+
+}

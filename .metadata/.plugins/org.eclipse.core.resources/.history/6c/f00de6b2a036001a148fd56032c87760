@@ -1,0 +1,35 @@
+package api.util;
+
+import java.util.HashSet;
+import java.util.Set;
+// Set의 주요기능인 합집합, 교집합 기능을 구현해보기
+public class HashSetTest2 {
+	public static void main(String[] args) {
+		HashSet<String> set = new HashSet<String>();
+		set.add("java");
+		set.add("jdbc");
+		set.add("oracle");
+		set.add("html");
+		set.add("css");
+		// 중복된 데이터는 하나로 친다.
+		set.add("java");
+		print(set,"set");
+		
+		// 앞에서 만든 set을 전달
+		HashSet<String> set2 = new HashSet<String>(set);
+		set2.add("servlet");
+		set2.add("jsp");
+		set2.add("hadoop");
+		
+	}
+	// Set에 저장된 데이터를 꺼내서 출력하기
+	// 다형성: HashSet 말고도 다른 타입의 Set이 와도 실행할 수 있음
+	public static void print(Set<String> set, String setName) {
+		System.out.println("사이즈=>"+set.size());
+		for (String data : set) {
+			System.out.println(setName+"에 저장된 요소=>"+data);
+		}
+		System.out.println("=================================");
+	}
+
+}

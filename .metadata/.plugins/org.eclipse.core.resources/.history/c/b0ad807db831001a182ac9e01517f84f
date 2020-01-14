@@ -1,0 +1,5 @@
+package jdbc.dept.exam;
+
+interface DeptDAO {
+
+}

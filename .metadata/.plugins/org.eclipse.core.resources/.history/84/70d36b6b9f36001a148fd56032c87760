@@ -1,0 +1,13 @@
+package api.util;
+
+public class HashSetTest2 {
+	public static void main(String[] args) {
+
+		
+	}
+	
+	public static void print() {
+		
+	}
+
+}

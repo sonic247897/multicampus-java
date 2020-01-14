@@ -1,0 +1,5 @@
+package jdbc.dept.exam;
+
+public class DeptDAO {
+
+}

@@ -1,0 +1,8 @@
+package jdbc.dept.exam;
+
+interface DeptDAO {
+	public int insert(DeptDTO dept);
+	public DeptDTO getDeptInfo();
+	public int update(DeptDTO dept);
+	
+}
