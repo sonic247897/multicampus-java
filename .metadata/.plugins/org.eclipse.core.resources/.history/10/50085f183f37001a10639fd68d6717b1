@@ -1,0 +1,13 @@
+package api.io;
+
+import java.io.InputStream;
+
+//InputStream을 이용해서 키보드로 입력받는 문자열을 읽기
+// - Scanner클래스의 next메소드의 기능을 직접 구현
+public class InputStreamTest {
+	public static void main(String[] args) {
+		InputStream in = System.in; //in상수의 타입과 같은 타입으로 선언
+		
+	}
+
+}

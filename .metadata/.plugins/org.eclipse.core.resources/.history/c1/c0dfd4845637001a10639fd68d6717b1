@@ -1,0 +1,10 @@
+package api.io;
+
+public class FileCopy {
+	public static void main(String[] args) {
+		// FileTest01.java파일 copy하기
+		// 1. FileReader로 읽고 FileWriter로 출력하기
+		
+		
+	}
+}

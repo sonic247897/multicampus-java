@@ -1,0 +1,10 @@
+package api.io;
+
+import java.io.FileWriter;
+
+public class FileWriterTest {
+	public static void main(String[] args) {
+		FileWriter fw = new FileWriter("src/data/output.txt");
+		
+	}
+}

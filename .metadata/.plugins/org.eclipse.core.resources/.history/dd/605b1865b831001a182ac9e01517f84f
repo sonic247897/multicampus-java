@@ -1,5 +1,0 @@
-package jdbc.dept.exam;
-
-public class DeptDAOImpl {
-
-}

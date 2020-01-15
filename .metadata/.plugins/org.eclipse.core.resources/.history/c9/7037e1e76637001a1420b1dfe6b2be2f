@@ -1,0 +1,45 @@
+package api.io;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ScoreTest {
+	public static void main(String[] args) {
+		BufferedReader br = null;
+		int total =0, count=0;
+		double avg = 0;
+		try {
+			br= new BufferedReader(new FileReader("src/data/score.txt"));
+			while(true) {
+				String data = br.readLine();
+				String[] dataArr = line.
+				if(data == null) {
+					break;
+				}
+				++count;
+				String str1 = data.substring(0, data.indexOf(","));
+				String str2 = data.substring(data.indexOf(" ")+1);
+				System.out.println(str1 +"ÀÇ Á¡¼ö´Â "+str2 +"Á¡");
+				int score = Integer.parseInt(str2);
+				total += score;
+				
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(br != null) br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		avg = total/count;
+		System.out.println("ÃÑÁ¡: "+total);
+		System.out.println("Æò±Õ: "+avg);
+
+	}
+}

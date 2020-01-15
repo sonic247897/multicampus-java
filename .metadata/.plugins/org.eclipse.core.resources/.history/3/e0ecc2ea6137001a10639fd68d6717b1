@@ -1,0 +1,11 @@
+package api.io;
+
+import java.io.BufferedReader;
+
+public class ScoreTest {
+	public static void main(String[] args) {
+		BufferedReader br = null;
+		br= new BufferedReader(fs);
+
+	}
+}

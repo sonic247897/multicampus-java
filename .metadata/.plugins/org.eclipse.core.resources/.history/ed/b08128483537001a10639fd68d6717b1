@@ -1,0 +1,20 @@
+package api.io;
+
+import java.io.File;
+
+public class FileTest01 {
+	public static void main(String[] args) {
+		// 액세스하고 싶은 파일이나 폴더의 위치를 File객체 만들 때 매개변수에 정의
+		// 1. c:\iot\iotest 폴더
+		// \는 문자로 못 쓴다.(escape sequene로 사용되므로)
+		// \문자 사용하려면 \\로 써야함(escape sequence로)
+		//File file1 = new File("c:\\iot\\iotest");
+		File file1 = new File("c:/iot/iotest"); // \대신 /사용하는 방법도 지원
+		
+		// 2. 프로젝트 폴더에 저장한 test.txt 파일
+		File file2 = new File("test.txt");
+		System.out.println(file1);
+		System.out.println(file2);
+	}
+
+}

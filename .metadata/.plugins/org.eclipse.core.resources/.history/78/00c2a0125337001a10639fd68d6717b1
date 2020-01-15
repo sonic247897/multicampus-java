@@ -1,0 +1,15 @@
+package api.io;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterTest {
+	public static void main(String[] args) throws IOException {
+		FileWriter fw = new FileWriter("src/data/output.txt");
+		// FileNotFoundException이 아니라 IOException인 이유?
+		// - File출력은 매개변수로 전달된 파일이 있으면 해당 파일을 열고 작업하지만
+		//	없는 경우 새로 파일을 생성하여 작업한다.
+		
+		
+	}
+}

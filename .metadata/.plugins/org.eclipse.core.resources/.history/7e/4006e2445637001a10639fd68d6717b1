@@ -1,0 +1,28 @@
+package api.io;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterTest {
+	// framework를 모르는 상황에서 try~catch 처리 귀찮을 때 간단히 테스트 하기용 
+	// main을 호출하는 java 인터프리터에서 알아서 예외를 처리한다.
+	// (실제로 사용할 때는 try~catch~finally로 써야한다.)
+	public static void main(String[] args) throws IOException {
+		// 1. 파일 open (F5하면 보임)
+		// write메소드가 호출될 때마다 파일의 내용을 추가 - append mode를 true (log파일(
+		FileWriter fw = new FileWriter("src/data/output.txt", true);
+		//FileWriter fw = new FileWriter("src/data/output.txt"); //파일 덮어쓰기
+		// FileNotFoundException이 아니라 IOException인 이유?
+		// - File출력은 매개변수로 전달된 파일이 있으면 해당 파일을 열고 작업하지만
+		//	없는 경우 새로 파일을 생성하여 작업한다.
+		
+		//2. 파일 액세스
+		fw.write(97); // int데이터->acii에 해당하는 문자가 출력
+		fw.write("문자열 쓰기\n");
+		fw.write("test\n");
+		
+		//3. 파일 close
+		fw.close();
+		
+	}
+}

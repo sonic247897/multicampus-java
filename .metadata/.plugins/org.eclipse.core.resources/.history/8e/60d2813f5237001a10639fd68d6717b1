@@ -1,0 +1,7 @@
+package api.io;
+
+public class FileWriterTest {
+	public static void main(String[] args) {
+
+	}
+}

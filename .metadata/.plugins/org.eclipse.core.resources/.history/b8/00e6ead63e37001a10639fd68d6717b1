@@ -1,0 +1,9 @@
+package api.io;
+//InputStream을 이용해서
+// => Scanner의 한 기능을 구현
+public class InputStreamTest {
+	public static void main(String[] args) {
+
+	}
+
+}

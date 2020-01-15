@@ -1,0 +1,48 @@
+package api.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileCopy {
+	public static void main(String[] args) {
+		// FileTest01.java파일 copy하기
+		// 1. FileReader로 읽고 FileWriter로 출력하기
+		// 2. src/data/copy_result.txt로 생성하기
+		// 3. 콘솔로도 출력되도록 작성
+		FileReader fs = null;
+		try {
+			fs = new FileReader("src/api.io/FileTest01.java");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}finally {
+			
+		}
+		
+	}
+}
+FileReader fs = null;
+try{
+	// 1. 파일 오픈하기
+	fs = new FileReader("src/data/test.txt");
+	// 2. 파일 액세스
+	while(true) {
+		int data = fs.read();
+		if(data == -1) {
+			break;
+		}
+		// 한글 안깨짐!
+		System.out.print((char)data);
+	}
+}catch(FileNotFoundException e) {
+	e.printStackTrace();
+}catch (IOException e) {
+	e.printStackTrace();
+}finally {
+	// 3. 파일닫기
+	try {
+		if(fs != null) fs.close();
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+}

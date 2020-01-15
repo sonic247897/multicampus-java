@@ -1,0 +1,9 @@
+package api.io;
+//InputStream을 이용해서 키보드로 입력받는 문자열을 읽기
+// => Scanner의 한 기능을 직접 구현
+public class InputStreamTest {
+	public static void main(String[] args) {
+
+	}
+
+}

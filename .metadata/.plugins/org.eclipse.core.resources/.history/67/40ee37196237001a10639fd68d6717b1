@@ -1,0 +1,25 @@
+package api.io;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ScoreTest {
+	public static void main(String[] args) {
+		BufferedReader br = null;
+		try {
+			br= new BufferedReader(new FileReader("src/data/score.txt"));
+			while(true) {
+				br.readLine();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			if(br != null) br.close();
+		}
+
+	}
+}

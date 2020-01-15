@@ -1,0 +1,12 @@
+package api.io;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class ScoreTest {
+	public static void main(String[] args) {
+		BufferedReader br = null;
+		br= new BufferedReader(new FileReader("src/api/io/FileTest01.java"));
+
+	}
+}

@@ -1,0 +1,40 @@
+package api.io;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+// BufferedReader로 한 문장씩 읽기
+public class BufferedReaderTest {
+	public static void main(String[] args) {
+		//FileReader fr = null;
+		BufferedReader br = null;
+		try{
+			// 1. 파일 오픈하기
+			//fr = new FileReader("src/data/test.txt"); //기본스트림
+			br = new BufferedReader(fr); //보조스트림 - 기본스트림과 연결(매개변수로 전달)
+			br = new BufferedReader(new FileReader("src/data/test.txt"));
+			// 2. 파일 액세스
+			while(true) {
+				int data = fr.read();
+				if(data == -1) {
+					break;
+				}
+				// 한글 안깨짐!
+				System.out.print((char)data);
+			}
+		}catch(FileNotFoundException e) {
+			e.printStackTrace();
+		}catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			// 3. 파일닫기
+			try {
+				if(fr != null) fr.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

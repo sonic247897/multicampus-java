@@ -1,0 +1,15 @@
+package api.io;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterTest {
+	public static void main(String[] args) {
+		try {
+			FileWriter fw = new FileWriter("src/data/output.txt");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
